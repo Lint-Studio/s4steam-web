@@ -47,18 +47,29 @@ class MyNavbar extends Component {
               <List className="icon-format" />
             )}
           </div>
+          {this.state.menuToggler ? (
+            <div className="side-menu">
+              <ul>
+                <li>Home</li>
+                <li>Blog</li>
+                <li>Tutorials</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+              </ul>
+            </div>
+          ) : null}
         </div>
-        {this.state.menuToggler ? (
-          <div className="side-menu">
-            <ul>
-              <li>Home</li>
-              <li>Blog</li>
-              <li>Tutorials</li>
-              <li>About Us</li>
-              <li>Contact Us</li>
-            </ul>
-          </div>
-        ) : null}
+
+        <div className="desktop-nav-wrapper">
+          <p className="desktop-nav-brand">S4STEAM</p>
+          <ul>
+            <li>Home</li>
+            <li>Blog</li>
+            <li>Tutorials</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
       </div>
     );
   }

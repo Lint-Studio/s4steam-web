@@ -65,21 +65,68 @@ a {
   box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 }
 
-.side-menu ul{
+.side-menu ul {
   padding: 2em;
 }
-.side-menu li{
-  font-family: 'Open Sans', sans-serif;
+.side-menu li {
+  font-family: "Open Sans", sans-serif;
   font-size: 1em;
   margin-bottom: 2em;
 }
 
-.side-menu li:active{
+.side-menu li:active {
   font-weight: bold;
 }
 
+.desktop-nav-wrapper {
+  visibility: collapse;
+}
 
 @media screen and (min-width: 480px) {
-  
-  
+  .mobile-nav-wrapper {
+    visibility: hidden;
+  }
+
+  .desktop-nav-wrapper {
+    visibility: visible;
+    background-color: black;
+    height: 4em;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .desktop-nav-brand {
+    font-size: 2em;
+    margin-top: 0.5em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: white;
+    margin-left: 1em;
+  }
+
+  .desktop-nav-wrapper ul{
+    
+  }
+  .desktop-nav-wrapper li {
+    margin-top: 1.5rem;
+    display: inline-block;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .desktop-nav-wrapper li:hover{
+    font-size: 1.2rem;
+    
+  }
+
+  .desktop-nav-wrapper li:hover{
+    font-size: 1.2rem;
+    font-weight: bold;
+    
+  }
 }
