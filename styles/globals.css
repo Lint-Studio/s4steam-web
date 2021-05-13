@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&family=Poppins:wght@100;700&display=swap");
+
 html,
 body {
   padding: 0;
@@ -54,12 +55,31 @@ a {
   margin-top: 0.5em;
 }
 
-.side-menu{
+.side-menu {
   position: absolute;
-  top: 0;
-  width: 50%;
-  margin-left: 50%;
-  margin-top: 4em;
-  height:20em;
-  background-color: yellow;
+  top: 4em;
+  margin-left: 5%;
+  text-align: center;
+  width: 90%;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+
+.side-menu ul{
+  padding: 2em;
+}
+.side-menu li{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  margin-bottom: 2em;
+}
+
+.side-menu li:active{
+  font-weight: bold;
+}
+
+
+@media screen and (min-width: 480px) {
+  
+  s
 }
