@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;700&display=swap");
 html,
 body {
   padding: 0;
@@ -15,9 +16,50 @@ a {
   box-sizing: border-box;
 }
 
-
-.mobile-nav-wrapper{
-  background-color: rgba(61, 61, 182, 0.699);
+.mobile-nav-wrapper {
+  background-color: white;
   height: 3em;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.brand-format {
+  font-size: 2em;
+  margin-top: 0.5em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: black;
+  margin-left: 1em;
+}
+
+.icon-wrapper-format {
+  height: 2em;
+  width: 2em;
+  margin-right: 1em;
+  margin-top: 1em;
+  background-color: white;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+.icon-wrapper-format:active {
+  background-color: black;
+  color: white;
+}
+.icon-format {
+  font-size: 1em;
+  margin-left: 0.5em;
+  margin-top: 0.5em;
+}
+
+.side-menu{
+  position: absolute;
+  top: 0;
+  width: 50%;
+  margin-left: 50%;
+  margin-top: 4em;
+  height:20em;
+  background-color: yellow;
 }
