@@ -14,3 +14,10 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
+.mobile-nav-wrapper{
+  background-color: rgba(61, 61, 182, 0.699);
+  height: 3em;
+  width: 100%;
+}
