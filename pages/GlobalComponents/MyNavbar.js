@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { List, X } from "react-bootstrap-icons";
-import { Transition } from "react-transition-group";
 
 const duration = 300;
 
@@ -49,6 +48,17 @@ class MyNavbar extends Component {
             )}
           </div>
         </div>
+        {this.state.menuToggler ? (
+          <div className="side-menu">
+            <ul>
+              <li>Home</li>
+              <li>Blog</li>
+              <li>Tutorials</li>
+              <li>About Us</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+        ) : null}
       </div>
     );
   }
